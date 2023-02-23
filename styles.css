@@ -100,4 +100,11 @@ header {
     border-radius: 5px;
     font-size: 18px;
   }
-    
+    .modena {
+        display: flex;
+        flex-direction: row;
+        border: solid black;
+        border-radius: 10px;
+
+
+    }
