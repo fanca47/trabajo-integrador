@@ -1,110 +1,198 @@
+*{
+    
+    text-decoration: none;
+    list-style-type: none;
+}
 
 header {
-    background-color: #ffffff;
-    height: 80px;
+    background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav {
+    border-bottom: solid black 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
-    padding: 0 50px;
-  }
-  
-  .logo a {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2391db;
-    text-decoration: none;
-  }
-  .logo a img {
-    max-width: 150px;
     height: auto;
-    margin-top: 5px;
+    /* padding: 30px; */
+
+
+  }
+
+  .logo {
+    height: 80px;
+
+  }
+ 
+  .navbar,
+  .nav-list {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+
+  }
+  .navbar {
+    gap: 150px;
+
+  }
+  .nav-list {
+    gap: 30px;
+
+
+
+  }
+
+  .nav-list a {
+    color: rgb(76, 122, 231);
+  
+
+  }
+  .main {
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;     
   }
   
-  .navbar ul {
-    list-style: none;
+  
+  #hero {
+    background-image: url(/assets/aberturas/Hero.jpg);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 50px;
+  }
+    
+  
+  .phero {
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:  rgb(86, 86, 86, 0.5);
+    border-radius: 10px;
+
+    
+  }
+  
+   h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1200;
+    margin-top: 80px;
+    background-color:  rgba(86, 86, 86, 0.5) ;
+    width: 600px;
+    min-width: 600px
+    border-radius: 10px;
+
+   
+  }
+  .ahero {
+    color: white;
+    background-color: rgb(86, 86, 86, 0.5);
+    width: 200px;
+    padding: 8px 3px;
+    border-radius: 10px;
+    font-size: large;
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  .h2 {
+    margin-bottom: 100px;
+  }
+  
+  #productos {
+    padding: 70px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 800px ;
+    gap: 50px;
+    background-image: url(./assets/aberturas/Productos.jpg);
+    background-size: cover;
+}
+
+  #productos h2 {
+    font-size: 73px;
+    font-weight: 800;
+    text-decoration: underline;
+    margin-top: 0;
+    
+
+
+  }
+
+  .cards-prod {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+
   }
-  
-  .navbar li {
-    margin: 0 10px;
-  }
-  
-  .navbar a {
-    font-size: 18px;
-    color: #3a6fd2;
-    text-decoration: none;
-  }
-  body {
-    padding-top: 150px; 
-    background-color: #8e8f90;
-  }
-  
-  .hero {
-    background-color: ##3a6fd2;
-    max-width: 1200px;
-    margin: -60px auto 0; 
+
+  .prod,
+  .prod-mam {
+    width: 300px;
+    height: 290px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    padding: 50px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: solid black
+    gap: 20px;
+    background-color: rgba(86, 86, 86, 0.5);
+    border-radius: 20px;
     
 
-    
   }
-  
-  .hero-image img {
-    width: 100%;
-    object-fit: cover; 
+  .prod img {
+    width: 250px;
     border-radius: 10px;
-    
-  
-  .hero-text {
-    max-width: 700px;
-    margin-top: 30px;
   }
-  
-  .hero-text h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+  .prod-mam img {
+    width: 130px;
   }
-  
-  .hero-text p {
+  .prod p,
+  .prod-mam p {
     font-size: 20px;
-    margin-bottom: 30px;
+    font-weight: 700;
+    color: white;
   }
+
   
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333333;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-  }
-    .modena {
-        display: flex;
-        flex-direction: row;
-        border: solid black;
-        border-radius: 10px;
-
-
-    }
+  
+  
+  
+  
