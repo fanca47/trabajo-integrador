@@ -139,14 +139,15 @@ header {
     padding: 70px 0px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: normal;
     flex-direction: column;
     flex-wrap: nowrap;
     margin-top: 800px ;
-    gap: 50px;
     background-image: url(./assets/aberturas/Productos.jpg);
     background-size: cover;
+    height: 100vh;
+    gap: 50px;
 }
 
   #productos h2 {
@@ -155,14 +156,15 @@ header {
     text-decoration: underline;
     margin-top: 0;
     
+    
 
 
   }
 
   .cards-prod {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     
@@ -199,6 +201,7 @@ header {
   }
   #servicios {
     width: 100%;
+    height: 100vh;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -289,6 +292,7 @@ header {
     width: 45%;
     height: 75%;
     padding-bottom: 50px;
+    height: 100vh;
     
   }
   
@@ -301,7 +305,8 @@ header {
     flex-direction: column;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 8px;
+    width: 100% ;
+    height: 75%;
   }
   
   label {
@@ -316,6 +321,11 @@ header {
     margin-bottom: 20px;
     border-radius: 5px;
     border: solid 1px;
+    
+  }
+  textarea {
+    width: 98%;
+    height: 50% ;
   }
   
   input[type="submit"] {
@@ -325,6 +335,7 @@ header {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    
   }
   
   h2 {
