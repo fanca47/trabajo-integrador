@@ -24,6 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: auto;
+    box-shadow: 0 8px 24px;
     /* padding: 30px; */
 
 
@@ -42,6 +43,15 @@ header {
     padding-right: 20px;
 
   }
+  .navbar i {
+    font-size: 30px;
+    display: none   ;
+  }
+
+  #toggle-menu {
+    display: none;
+  }
+
   .navbar {
     gap: 150px;
 
@@ -351,5 +361,10 @@ header {
     border: none;
     border-radius: 5px;
   }
-  
+
+  @media (max-width: 576px)  {
+
+  width: 100%;
+  height: calc(100vh-80px);
+}
   
