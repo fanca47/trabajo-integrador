@@ -4,11 +4,7 @@
     list-style-type: none;
 }
 body {
-    background-color: linear-gradient(135deg, #e6e6e6, #808080);
-    background: -webkit-linear-gradient(135deg, #e6e6e6, #808080);
-    background: -moz-linear-gradient(135deg, #e6e6e6, #808080);
-    background: -o-linear-gradient(135deg, #e6e6e6, #808080);
-    ;
+    background-color: black;
 }
 
 header {
@@ -29,9 +25,18 @@ header {
 
 
   }
+  .nav-list li {
+    font-weight: 700;
+    border-left: solid black ;
+    border-right: solid black;
+    padding: 5px;
+    border-radius: 10px;
+  }
 
   .logo {
-    height: 80px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 10px;
 
   }
  
@@ -69,8 +74,8 @@ header {
 
   }
   .main {
-    position: relative;
-    background-color: white;
+    /* position: relative; */
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,21 +90,21 @@ header {
     height: 100vh;
     top: 0;
     left: 0;
-    position: absolute;
+    position: relative;
     background-repeat: no-repeat;
     background-size: 100% auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     gap: 50px;  
     background-size: cover;
     background-position: center;
     
     
   }
-  
+
   
     
   
@@ -131,8 +136,9 @@ header {
     margin-top: 80px;
     background-color:  rgba(86, 86, 86, 0.5) ;
     width: 600px;
-    min-width: 600px
     border-radius: 10px;
+    max-width: 75%;
+    text-align: center;
 
    
   }
@@ -153,17 +159,17 @@ header {
   }
   
   #productos {
-    padding: 70px 0px;
+    /* padding: 70px 0px; */
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: normal;
     flex-direction: column;
-    flex-wrap: nowrap;
-    margin-top: 800px ;
+    flex-wrap: wrap;
+    /* margin-top: 800px ; */
     background-image: url(./assets/aberturas/Productos.jpg);
     background-size: cover;
-    height: 100vh;
+    height: auto;
     gap: 50px;
 }
 
@@ -184,6 +190,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding-bottom: 30px;
     
 
   }
