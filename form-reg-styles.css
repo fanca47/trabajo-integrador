@@ -13,7 +13,7 @@ main {
 
 }
 .logo-gb {
-   width: 15%;
+   width: 300px;
 }
 form {
     display: flex;
@@ -60,4 +60,10 @@ form {
   boton:hover {
     background-color: #3e8e41;
   }
-  
+  @media (max-width: 576px) {
+    .logo-gb{
+        max-width: 300px;
+        width: 90%;
+
+    }
+  }
