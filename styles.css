@@ -171,7 +171,7 @@ header {
     /* margin-top: 800px ; */
     background-image: url(./assets/aberturas/Productos.jpg);
     background-size: cover;
-    height: auto;
+    height: 100vh;
     gap: 50px;
 }
 
